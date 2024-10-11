@@ -1,15 +1,11 @@
 # Evolution X packages
 PRODUCT_PACKAGES += \
-    EvoEgg
-
-ifeq ($(EVO_BUILD_TYPE),Official)
-PRODUCT_PACKAGES += \
+    EvoEgg \
     Updater
 
 ifeq ($(WITH_GMS),false)
 PRODUCT_PACKAGES += \
     UpdaterVanillaOverlay
-endif
 endif
 
 ifeq ($(TARGET_SUPPORTS_64_BIT_APPS),true)
